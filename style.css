@@ -1,0 +1,103 @@
+text {
+  font: 10px sans-serif;
+}
+
+.current {
+  fill: #a3c4dc;
+}
+
+.dumbbell {
+  font-family: "Arial Black";
+  font-size: 12px;
+}
+
+.future {
+  fill: #0e668b;
+}
+
+line.between {
+  stroke: #a3c4dc;
+  stroke-width: 6;
+}
+
+line.before {
+  stroke: #0e668b;
+  stroke-width: 0.5;
+  stroke-dasharray: 1;
+}
+
+.domain {
+  stroke: gray;
+}
+
+.tick line {
+  stroke: gray;
+}
+
+.axis-label {
+  font: 10px sans-serif;
+  fill: gray;
+}
+
+.axis text {
+  font: 10px sans-serif;
+  fill: gray;
+}
+
+.day-marker {
+  stroke: #0e668b;
+  stroke-width: 1;
+  stroke-dasharray: 2;
+}
+
+.marker-label {
+  fill: #0e668b;
+}
+
+.marker-text {
+  font-family: 'Arial Black';
+  font-size: 10px;
+  fill: white;
+}
+
+.d3-tip {
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+  padding: 6px;
+  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  border: 2px solid steelblue; /* color overwritten with javascript */
+  border-radius: 3px;
+}
+
+/*
+ * Creates a small triangle extender for the tooltip,
+ * using CSS triangle (https://css-tricks.com/snippets/css/css-triangle/)
+ */
+.d3-tip:after {
+  display: inline-block;
+  content: ""; /* creates an empty div */
+  position: absolute;
+  left: 50%; /* positions triangle in center of tooltip */
+  margin-left: -10px; /* accounts for width of triangle */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent; /* this creates the triangle effect */
+  border-right: 10px solid transparent; /* this creates the triangle effect */
+  border-top: 10px solid #fff;
+  border-top-color: inherit; /* sets triangle fill (inherits from line color) */
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  top: 100%;
+}
+
+#legend-container {
+  border: 2px solid steelblue;
+}
+
+.legend-item text {
+  font: 10px sans-serif;
+}
